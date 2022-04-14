@@ -8,9 +8,10 @@
   --border-radius: 10px;
 }
 
-html, body{
-  font-family: 'Space Mono', monospace;
-  background-color:   hsl(185, 41%, 84%);
+html,
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -34,8 +35,8 @@ html, body{
   align-items: center;
 }
 
-
-.calc-left, .calc-right {
+.calc-left,
+.calc-right {
   width: 50%;
   align-self: stretch;
   min-height: 100%;
@@ -45,24 +46,12 @@ html, body{
   margin-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .calc {
-    flex-direction: column;
-  }
-  .calc-left, .calc-right {
-   width: 100%;
-   align-self: stretch;
-   min-height: 100%;
- }
- }
-
 .cl-input {
   margin-bottom: 2rem;
 }
 
-.cl-input label, 
-.cl-tips-title
- {
+.cl-input label,
+.cl-tips-title {
   color: hsl(184, 14%, 56%);
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -71,13 +60,13 @@ html, body{
 .form-input {
   width: 100%;
   display: flex;
-  background-color:  hsl(189, 41%, 97%);
+  background-color: hsl(189, 41%, 97%);
   padding: 0.4rem 0;
   border-radius: 5px;
   border: 2px solid transparent;
 }
 
-.form-input:hover, 
+.form-input:hover,
 .form-input:focus-within {
   border: 2px solid hsl(172, 67%, 45%);
 }
@@ -97,8 +86,8 @@ html, body{
   color: hsl(183, 100%, 15%);
 }
 
-.form-input input[type=number]::-webkit-inner-spin-button,
-.form-input input[type=number]::-webkit-outer-spin-button {
+.form-input input[type="number"]::-webkit-inner-spin-button,
+.form-input input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -129,7 +118,6 @@ html, body{
   border-radius: 5px;
   width: 30%;
   text-align: center;
-
 }
 
 .calc-right {
@@ -142,11 +130,7 @@ html, body{
 }
 
 .cr-wrapper {
-
 }
-
-
-
 
 .tip {
   display: flex;
@@ -156,7 +140,6 @@ html, body{
 }
 
 .tip-info {
-
 }
 
 .tip-info .tip-title {
@@ -175,16 +158,14 @@ html, body{
   color: hsl(172, 67%, 45%);
 }
 
-
 .tip-action {
-  
 }
 
 .tip-reset-btn {
   width: 100%;
   border: none;
   border-radius: 5px;
-  background-color:  hsl(183, 100%, 20%);
+  background-color: hsl(183, 100%, 20%);
   text-transform: uppercase;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
@@ -192,9 +173,29 @@ html, body{
   color: hsl(183, 100%, 15%);
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-
+  .calc {
+    flex-direction: column;
+  }
+  
+  .calc-left,
+  .calc-right {
+    width: 100%;
+    align-self: stretch;
+    min-height: 100%;
+  }
+}
 
 /* Frontend Mentor */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
