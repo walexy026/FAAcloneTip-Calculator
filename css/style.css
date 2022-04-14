@@ -182,7 +182,7 @@ body {
   .calc {
     flex-direction: column;
   }
-  
+
   .calc-left,
   .calc-right {
     width: 100%;
@@ -193,6 +193,8 @@ body {
 
 /* Frontend Mentor */
 .attribution {
+  position: absolute;
+  bottom: 20px;
   font-size: 11px;
   text-align: center;
 }
