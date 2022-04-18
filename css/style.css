@@ -107,6 +107,7 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .cl-tip {
@@ -118,6 +119,11 @@ body {
   border-radius: 5px;
   width: 30%;
   text-align: center;
+}
+
+.cl-tip.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(0, 0%, 100%);
 }
 
 .calc-right {
